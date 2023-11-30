@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0e0d0d;
+}
+
+body {
+    background-color: #ffdd90;
+    background-image: url("Imagen de WhatsApp 2023-06-16 a las 14.27.04.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: bottom 50px;
+    flex-direction: column;
+}
+
+.login,
+.register {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 400px;
+    height: 60px;
+    font-size: 35px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 5px;
+    text-align: center;
+}
+

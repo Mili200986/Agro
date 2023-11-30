@@ -1,0 +1,79 @@
+body {
+    font-family: "Cascadia mono", sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: #0e0d0d;
+    
+}
+
+body{
+    background-color: grey;
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    
+}
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+    
+.form-group {
+  margin-bottom: 45px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.form-group input {
+  padding: 15px;
+  width: 100%;
+  max-width: 300px; 
+  display: block;
+}
+
+.password-fields {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#passwordMatch {
+  margin-top: 5px;
+  
+  #otros-doc-container {
+    display: none;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 140px;
+    padding: 40px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+}

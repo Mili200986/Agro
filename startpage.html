@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color:gray;
+        margin: 50;
+        padding: 40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #content {
+        display: flex;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        
+      }
+
+      .column {
+        flex: 1;
+        padding: 10px;
+        width: 50;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      #menu button {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      #profile-pic {
+        max-width: 50%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        
+      }
+      #small-profile-pic {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        max-width: 10px; 
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:white;
+        font-size: 12px;
+        
+      }
+      #small-profile-pic img {
+        max-width: 60px; 
+        margin-bottom: 15px;
+      }
+      #news-section {
+        margin-top: 70px;
+        padding: 40px 20px;
+      }
+
+      .news-item {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        align-items: left;
+      }
+
+      .news-item:last-child {
+        border-bottom: none;
+      }
+
+      #calendar {
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      #new-post-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: auto;
+      }
+
+      #upload-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 150px;
+        height: 50px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <style>
+      .imagen {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        width: 210px;
+        height: 210px;
+      }
+    </style>
+    <img
+      src="logo-PhotoRoom.png-PhotoRoom.png"
+      alt="logo-PhotoRoom.png-PhotoRoom.png"
+      class="imagen"
+    />
+
+    
+
+    <div id="content">
+      <div class="column" id="menu">
+        <button><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\9. Create profile\create_profile.html" target="_blank">User profile</a></button>
+
+        <button><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\11.Salesform\Salesform.html" target="_blank">Sell</a></button>
+
+        <button><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\10.Purchase form\Purchase form.html" target="_blank">Buy</a></button>
+        
+        <button><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\14.user manual\user manual.html" target="_blank">User manual</a></button>
+        
+        <button><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\15.contact us\contact-us.html" target="_blank">Contact Us</a></button>
+       
+      </div>
+      
+
+
+      
+      <div class="column">
+        <div id="profile-pic">
+          <img
+            src="avatar_man_people_person_profile_user_icon_123385.png"
+            alt="Foto de Perfil"
+            
+          />
+          
+        </div>
+        <button id="upload-button">Charge Image</button>
+      </div>
+
+      <div class="column">
+        <div id="news-section">
+          <div class="news-item">
+            <h3>Noticia 1</h3>
+            <p>Contenido de la noticia 1.</p>
+            <p>Fecha: 10 de agosto de 2023</p>
+          </div>
+          <div class="news-item">
+            <h3>Noticia 2</h3>
+            <p>Contenido de la noticia 2.</p>
+            <p>Fecha: 15 de agosto de 2023</p>
+          </div>
+          <!-- Más noticias aquí... -->
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <div id="small-profile-pic">
+      <img src="avatar_man_people_person_profile_user_icon_123385.png" alt="Foto pequeña de Perfil">
+      User
+    </div>
+    <button id="new-post-button"><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\8 new post\new_post.html" target="_blank">New Post</a></button>
+
+    <input type="file" id="upload-image" style="display: none" />
+
+    <script>
+      document
+        .getElementById("upload-button")
+        .addEventListener("click", function () {
+          document.getElementById("upload-image").click();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil de Usuario</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .contact-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .contact-icon {
+    width: 50px;
+    margin-left: 5px;
+  }
+  .profile-image-change {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .form-container {
+    display: flex;
+    margin: 20px;
+  }
+  .column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .button.red {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  .button.green {
+    background-color: #2ecc71;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .save-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+    <style>
+        .imagen {
+          position: absolute;
+          top: 0;
+          right: 50px;
+          width: 210px;
+          height: 210px;
+        }
+      </style>
+      <img
+        src="logo-PhotoRoom.png-PhotoRoom.png"
+        alt="logo-PhotoRoom.png-PhotoRoom.png"
+        class="imagen"
+      />
+<div class="header">
+  <div class="profile-info">
+    <img class="profile-image" src="D:\User\Desktop\Agroagca gral\9. Create profile\perfil.png" alt="Imagen de Perfil">
+    <div class="user-details">
+      <div class="user-name">Username</div>
+      <div class="contact-icons">
+        <img class="contact-icon" src="D:\User\Desktop\Agroagca gral\9. Create profile\whatsapp_icon.png" alt="WhatsApp">
+        <img class="contact-icon" src="D:\User\Desktop\Agroagca gral\9. Create profile\correo.png" alt="Correo">
+        <img class="contact-icon" src="D:\User\Desktop\Agroagca gral\9. Create profile\telefono.png" alt="Teléfono">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header">
+  <img class="profile-image-change" src="D:\User\Desktop\Agroagca gral\9. Create profile\camara.png" alt="Cambiar Foto">
+</div>
+
+<div class="form-container">
+  <div class="column">
+    <div class="form-group">
+      <label for="nombres">First name</label>
+      <input type="text" id="nombres">
+    </div>
+    <div class="form-group">
+      <label for="apellidos">Last name</label>
+      <input type="text" id="apellidos">
+    </div>
+    <div class="form-group">
+      <label for="telefono">Contact phone</label>
+      <input type="text" id="telefono">
+    </div>
+    <div class="form-group">
+      <label for="direccion">Adress</label>
+      <input type="text" id="direccion">
+    </div>
+  </div>
+  <div class="column">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email">
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+  </div>
+</div>
+<div class="button-container">
+  <button class="button red"><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\7 Start page\startpage.html" target="_blank">Back</a></button>
+  <button class="button green">
+    <img class="save-icon" src="D:\User\Desktop\Agroagca gral\9. Create profile\disquett.png" alt="Save">
+    <a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\7 Start page\startpage.html" target="_blank">Save</a>
+  </button>
+</div>
+</body>
+</html>

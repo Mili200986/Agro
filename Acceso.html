@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acceso</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <style>
+      .imagen {
+        position: absolute;
+        top: 0;
+        right: 50px;
+      }
+    </style>
+    <img
+      src="logo-PhotoRoom.png-PhotoRoom.png"
+      alt="logo-PhotoRoom.png-PhotoRoom.png"
+      class="imagen"
+    />
+
+    <h1>
+      <style>
+        h1 {
+          font-family: "Cascadia Mono", monospace;
+          font-size: 50px;
+        }
+      </style>
+      <center>Security</center>
+    </h1>
+
+    <div class="form-group"><center
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder=" " />
+
+      <form>
+        <label for="password">Contraseña:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          onkeyup="previewPassword()"
+        />
+        <br />
+
+        <label for="confirmPassword">Confirmar Contraseña:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          onkeyup="checkPasswordMatch()"
+        />
+        <span id="passwordMatch"></span>
+        <br />
+
+        <span id="passwordPreview"></span>
+
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+           
+            <button style="padding: 10px 20px; border: none; cursor: pointer; font-size: 14px; border-radius: 5px; background-color: red; color: white;" type="button"><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\3.Sign in\sign in.html" target="_blank">Back</a></button>
+            <button style="padding: 10px 20px; border: none; cursor: pointer; font-size: 14px; border-radius: 5px; background-color: green; color: white;" type="button"><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\7 Start page\startpage.html" target="_blank">Next step</a></button>
+        </div>
+      </form>
+
+      <script>
+        function checkPasswordMatch() {
+          const passwordInput = document.getElementById("password");
+          const confirmPasswordInput =
+            document.getElementById("confirmPassword");
+          const passwordMatch = document.getElementById("passwordMatch");
+
+          if (passwordInput.value === confirmPasswordInput.value) {
+            passwordMatch.textContent = "Las contraseñas coinciden";
+            passwordMatch.style.color = "green";
+          } else {
+            passwordMatch.textContent = "Las contraseñas no coinciden";
+            passwordMatch.style.color = "red";
+          }
+        }
+      </script>
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New post</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:gray;
+    font-family: cascadia monospace, sans-serif;
+  }
+  .container {
+    padding: 150px;
+    text-align: center;
+  }
+  .title-large {
+    font-size: 76px;
+    margin-bottom: 10px;
+    font-family: CascadiaMonospace, sans-serif;
+  }
+  .title-medium {
+    font-size: 54px;
+    margin-bottom: 10px;
+  }
+  .text-small {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+.button img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  
+}
+.button label {
+  white-space: nowrap;
+  margin-left: 5px;
+   
+}
+  .button.red {
+    background-color: #e74c3c;
+    color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  .button.green {
+    background-color: #2ecc71;
+    color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  input[type="text"] {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+</style>
+</head>
+<body>
+    <style>
+        .imagen {
+          position: absolute;
+          top: 0;
+          right: 50px;
+          width: 240px;
+          height: 240px;
+        }
+      </style>
+      <img
+        src="logo-PhotoRoom.png-PhotoRoom.png"
+        alt="logo-PhotoRoom.png-PhotoRoom.png"
+        class="imagen"
+      />
+<div class="container">
+  <div class="title-large">New Post</div>
+  <div class="title-medium"><input type="text" placeholder="Escribe aquí el titulo de tu noticia" onclick="this.value=''"></div>
+  <p class="text-small"><input type="text" placeholder="Escribe aquí tu noticia" onclick="this.value=''"></p>
+  
+  <div class="button-container">
+    <button class="button photo">
+        <img src="D:\User\Desktop\Agroagca gral\8 new post\icon camara.png" alt="Cargar Imagen">
+        <label>Cargar Imagen</label>
+      </button>
+      <button class="button document">
+        <img src="D:\User\Desktop\Agroagca gral\8 new post\clip icon.png" alt="Anexar Documento">
+        <label>Anexar Documento</label>
+    </button>
+
+  <button class="button red"><a href="C:\Users\karen\Downloads\Agroagca gral (1)\Agroagca gral\7 Start page\startpage.html" target="_blank">Return</a></button>
+<button class="button green">Post</button>
+</body>
+</html>
